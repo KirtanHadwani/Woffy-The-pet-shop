@@ -3,7 +3,10 @@
   margin: 0px;
   padding: 0px;
 }
+.logo img{
 
+  margin-top: 15px;
+}
 .navUpper {
   background-color: #111111;
   color: white;

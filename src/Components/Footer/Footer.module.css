@@ -1,0 +1,65 @@
+.footer{
+    background-color: #00BDCD;    
+    height: 372px;
+    margin-top: 15px;
+}
+.socialmedia h4{
+    color: white;
+}
+.otherlinks{
+ display: flex;
+ flex-direction: row;  
+ justify-content: space-around;
+ align-items: flex-start;  
+ margin-top: 25px;
+ margin-left: 100px;
+ width: 85%;
+}
+.searchedLinks{
+    color: white;
+    margin: 0px 100px 0px 100px;
+    padding-top: 15px;
+}
+.searchedLinks span{
+    font-weight: bold;
+}
+.onlineShopping1, .woffyDifference, .Community, .onlineShopping2, .signup{
+    color: white;
+    display: flex;
+    flex-direction: column;    
+}
+.footerEnd{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.onlineShopping1 a, .woffyDifference a, .Community a, .onlineShopping2 a{
+    text-decoration: none;
+    color: white;
+}
+.onlineShopping1 span, .woffyDifference span, .Community span, .onlineShopping2 span{
+    margin-top: 5px;
+}
+.signup input{
+    padding: 6px 15px;
+    font-size: 15px;
+    width: 200px;
+    box-sizing: border-box;
+    border-radius: 3px;
+    border: none;
+}
+.signup button{
+    color: #FC8321;
+    padding: 6.9px;
+    font-size: 15px;
+    margin-left: 20px;
+}
+.signup p{
+    width: 290px;
+}
+.woffyDifference{
+    margin-bottom: 15px;
+}

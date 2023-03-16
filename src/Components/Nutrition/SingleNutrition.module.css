@@ -1,0 +1,28 @@
+.singleNutrition{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-right: 80px;
+    margin-bottom: 30px;
+    color: #FC8321;
+}
+.nutritionTitle{
+    margin-top: 16px;
+  
+}
+.NutritionContainer{
+    display: flex;
+    flex-direction: row;
+}
+.nutrition{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 80px;
+    margin-bottom: 50px;
+}
+h3{
+    margin-bottom: 30px;
+    font-size: 25px;
+}

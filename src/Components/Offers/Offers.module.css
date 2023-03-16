@@ -1,0 +1,11 @@
+.singleOffer{
+    display: flex;
+    flex-direction: row;
+    /* align-items: center; */
+    justify-content: space-between;
+    align-items: center;
+    /* width: 272.5px;
+    height: 168px;
+    margin: 25px 30px 25px 100px; */
+    background-color: #FEF8F0;
+}

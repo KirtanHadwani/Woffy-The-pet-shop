@@ -1,0 +1,43 @@
+.Categories{
+    background-color: #FEF8F0;
+    height: 500px;
+}
+.CategoryTitle{
+    text-align: center;
+    /* margin-top: 10px; */
+    padding: 20px;
+}
+.CategoryCard{
+    background-color: #FFFFFF;
+    height: 150px;
+    width: 150px;
+    border-radius: 10px;
+    box-shadow:  5px 5px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+img{
+    margin-top: 8px;
+    margin-left: 3px;
+    margin-right: 3px;
+}
+.categoryTitle{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.CategoryContainer1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    overflow: hidden;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+.CategoryContainer2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    overflow: hidden;
+    flex-wrap: wrap;
+}
