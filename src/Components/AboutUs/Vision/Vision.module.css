@@ -1,0 +1,22 @@
+.visionContainer{
+    background-color: #FC8321;
+    height: 450px;
+    margin-top: 150px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.visionContainer img{
+    width: 750px;
+    height: 600px;
+}
+.visionContainer h4, p{
+    color: white;
+}
+.visionContainer h4{
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+.visionContainer p{
+    font-size: 17px;
+}
