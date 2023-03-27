@@ -22,7 +22,7 @@ const Header: React.FC = (props) => {
           </div>
           <div className={classes.icons}>
           <span className={classes.singleIcon}><FontAwesomeIcon icon={faPhoneVolume as IconProp} /> Support</span>
-          <Link to='/Login'><span className={classes.singleIcon}><FontAwesomeIcon icon={faUser as IconProp} /> Login/Register</span></Link>
+          <span className={classes.singleIcon}><FontAwesomeIcon icon={faUser as IconProp} /> Account</span>
           <span className={classes.singleIcon}><FontAwesomeIcon icon={faCartShopping as IconProp} /> Cart</span>
           </div>
         </div>

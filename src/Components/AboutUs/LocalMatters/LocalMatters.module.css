@@ -1,0 +1,35 @@
+.LocalMattersContainer {
+  height: 600px;
+  /* margin-top: 200px; */
+  margin-bottom: 95px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #fef0f0;
+}
+.LocalMattersImg {
+  width: 473.16px;
+  height: 413px;
+  margin-left: 690px;
+  margin-top: -257px;
+  margin-bottom: 22px;
+}
+.LocalMattersContainer h4 {
+  font-size: 30px;
+  margin-bottom: -14px;
+  margin-top: -18px;
+  background-color: #fef0f0;
+}
+.LocalMattersContainer p {
+  font-size: 14px;
+  color: black;
+  margin-bottom: 33px;
+  margin-left: 139px;
+  text-align: justify;
+  margin-right: 641px;
+}
+.paraUpper {
+  margin-bottom: -174px;
+  margin-top: 0px;
+}

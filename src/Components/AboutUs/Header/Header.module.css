@@ -66,3 +66,7 @@
 .navLinks_text a:hover{
     border-bottom:1px solid #2F2F2F;
 }
+.navLinks_text a:active{
+  color: #FF5555;
+  border-bottom: 1px solid #FF5555;
+}

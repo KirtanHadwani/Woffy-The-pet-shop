@@ -8,6 +8,8 @@
   background-size: cover;
   display: grid;
   place-items: center;
+ 
+  
 }
 .boldText {
   font-size: 50px;

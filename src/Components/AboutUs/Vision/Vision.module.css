@@ -12,6 +12,7 @@
 }
 .visionContainer h4, p{
     color: white;
+    margin-left: 0px;
 }
 .visionContainer h4{
     font-size: 30px;
@@ -19,4 +20,5 @@
 }
 .visionContainer p{
     font-size: 17px;
+    
 }

@@ -1,0 +1,39 @@
+.FoundersContainer {
+  height: 633px;
+  margin-top: 200px;
+  margin-bottom: 95px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.foundersImg {
+  width: 473.16px;
+  height: 413px;
+  margin-left: 690px;
+  margin-top: -257px;
+  margin-bottom: 22px;
+}
+.FoundersContainer h4 {
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+.FoundersContainer p {
+    font-size: 18px;
+    color: black;
+    margin-bottom: 33px;
+    margin-left: 139px;
+    text-align: justify;
+    margin-right: 641px;
+}
+.paraUpper {
+    margin-bottom: -174px;
+    margin-top: 79px;
+}
+.paraDown{
+    font-size: 18px;
+    margin-bottom: 33px;
+    margin-left: 139px;
+    text-align: justify;
+    margin-right: 127px;
+}

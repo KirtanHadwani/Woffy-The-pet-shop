@@ -1,0 +1,24 @@
+.OurBuisinessContainer{
+    background-color: #00BDCD;
+    height: 333px;
+    margin-top: 150px;
+    margin-bottom: 95px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.OurBuisinessContainer img{
+    width: 750px;
+    height: 600px;
+}
+.OurBuisinessContainer h4, p{
+    color: white;
+    margin-left: 103px;
+}
+.OurBuisinessContainer h4{
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+.OurBuisinessContainer p{
+    font-size: 17px;
+}

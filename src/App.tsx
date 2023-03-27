@@ -3,7 +3,12 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import "./App.css";
 import AboutUs from "./Components/AboutUs/AboutUs";
+import ContactUs from "./Components/ContactUs/ContactUs";
 import Home from "./Components/Home";
+import Login from "./Components/LoginRegister/Login";
+import LoginRegister from "./Components/LoginRegister/LoginRegister";
+import Register from "./Components/LoginRegister/Register";
+
 // import Banner from "./Components/Banners/Banner";
 // import Blog from "./Components/Blog/Blog";
 // import Categories from "./Components/Categories/Categories";
@@ -31,8 +36,12 @@ function App() {
       <Footer /> */}
       <BrowserRouter>
         <Routes>
+        <Route path="/" element={<Home />} />
           <Route path="/food" element={<Home />} />
           <Route path="/aboutus" element={<AboutUs />} />
+          <Route path="/contactus" element={<ContactUs/>}/>
+          <Route path="/Login" element={<Login/>}/>
+          <Route path="/Register" element={<Register/>}/>
         </Routes>
       </BrowserRouter>
     </>

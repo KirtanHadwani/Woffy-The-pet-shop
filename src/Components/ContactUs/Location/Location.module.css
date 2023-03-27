@@ -1,0 +1,40 @@
+.Container{
+    display: flex;
+    flex-direction: row;
+    margin-top: 70px;
+    margin-left: 130px;
+    margin-right: 130px;
+    justify-content: space-around;
+    margin-bottom: 400px;
+}
+.LeftContainer{
+    align-items: center;
+    text-align: center;
+    
+}
+.RightContainer{
+    
+    align-items: center;
+    text-align: center;
+    margin-right: 100px;
+}
+.title{
+    font-size: 28px;
+    font-weight: 600;
+    text-align: start;
+}
+.description{
+    font-size: 18px;
+    font-weight: 400;
+    text-align: start;
+    margin-right: 100px;
+    margin-top: 16px;
+}
+.imageleft{
+    width: 200px;
+    height: 200px;
+}
+.imageright{
+    width: 200px;
+    height: 200px;
+}
