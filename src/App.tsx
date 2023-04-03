@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.css";
 import AboutUs from "./Components/AboutUs/AboutUs";
 import ContactUs from "./Components/ContactUs/ContactUs";
+import Filter from "./Components/FilterPage/Filter";
 import Home from "./Components/Home";
 import Login from "./Components/LoginRegister/Login";
 import LoginRegister from "./Components/LoginRegister/LoginRegister";
@@ -42,6 +43,7 @@ function App() {
           <Route path="/contactus" element={<ContactUs/>}/>
           <Route path="/Login" element={<Login/>}/>
           <Route path="/Register" element={<Register/>}/>
+          <Route path="/Filter" element={<Filter/>}/>
         </Routes>
       </BrowserRouter>
     </>

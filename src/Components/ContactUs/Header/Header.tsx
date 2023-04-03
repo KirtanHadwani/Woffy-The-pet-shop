@@ -5,7 +5,7 @@ import { IconProp } from '@fortawesome/fontawesome-svg-core'
 import { faUser } from '@fortawesome/free-solid-svg-icons';
 import  { faPhoneVolume } from '@fortawesome/free-solid-svg-icons';
 import { faCartShopping } from '@fortawesome/free-solid-svg-icons';
-import Logo from '../../assets/Mask group.svg'
+// import Logo from '/assets/Mask group.svg'
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 
 const Header: React.FC = (props) => {
@@ -16,7 +16,7 @@ const Header: React.FC = (props) => {
      </div>
      <div className={classes.navBottom}>
         <div>
-          <div className={classes.logo}><img src={Logo} alt="logo" /></div>
+          <div className={classes.logo}><img src='/assets/Mask group.svg' alt="logo" /></div>
           <div className={classes.inputField}>
             <input type="search" className={classes.search}/>
           </div>

@@ -6,6 +6,7 @@
     text-align: center;
     /* margin-top: 10px; */
     padding: 20px;
+    
 }
 .CategoryCard{
     background-color: #FFFFFF;
@@ -25,6 +26,7 @@ img{
 .categoryTitle{
     margin-top: 5px;
     margin-bottom: 5px;
+   
 }
 .CategoryContainer1{
     display: flex;
@@ -34,6 +36,12 @@ img{
     flex-wrap: wrap;
     margin-bottom: 50px;
 }
+
+.CategoryContainer1 a{
+    text-decoration: none;
+    color: black;
+}
+
 .CategoryContainer2{
     display: flex;
     flex-direction: row;

@@ -1,11 +1,11 @@
 import React from "react";
 import classes from './Vision.module.css'
-import vision from "../../../assets/AboutBanner/visionDogImage.png";
+// import vision from "../../../assets/AboutBanner/visionDogImage.png";
 
 const Vision = () => {
   return (
     <div className={classes.visionContainer}>
-      <img src={vision} alt="Dog Image" />
+      <img src='/assets/AboutBanner/visionDogImage.png' alt="Dog Image" />
       <div>
         <h4>Vision</h4>
         <p>

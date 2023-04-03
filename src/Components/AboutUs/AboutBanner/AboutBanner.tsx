@@ -1,5 +1,5 @@
 import React from "react";
-import Aboutbanner1 from "/home/tmdev/Desktop/project/PetShop/src/assets/AboutBanner/aboutbanner.png";
+// import Aboutbanner1 from "/assets/AboutBanner/aboutbanner.png";
 import classes from "./AboutBanner.module.css";
 
 function AboutBanner() {
@@ -7,7 +7,7 @@ function AboutBanner() {
     <>
     <div
       className={classes.background}
-      style={{ backgroundImage: `url(${Aboutbanner1})` }}
+      style={{ backgroundImage: 'url("/assets/AboutBanner/aboutbanner.png")' }}
     >
       <h4 className={classes.boldText}>
         Thai Awesome Crafted by Heart, Loved by your pets

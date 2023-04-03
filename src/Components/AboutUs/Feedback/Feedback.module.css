@@ -1,5 +1,5 @@
-.feedbackContainer{
-    margin-bottom: 60px;
+.feedbackContainer {
+  margin-bottom: 60px;
 }
 .text p {
   color: black;
@@ -12,6 +12,12 @@
   margin-top: 40px;
 }
 
+.NameNum {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
 .Name {
   width: 400px;
   height: 50px;
@@ -21,6 +27,7 @@
 .PhoneNumber {
   width: 400px;
   height: 50px;
+  -moz-appearance: textfield;
 }
 .Email {
   width: 840px;
@@ -45,4 +52,11 @@
   color: white;
   text-align: center;
   cursor: pointer;
+}
+.errorMsg {
+  color: tomato;
+}
+.NameNuminput {
+  display: flex;
+  flex-direction: column;
 }

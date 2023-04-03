@@ -1,6 +1,6 @@
 import React from "react";
 import classes from "./LocalMatters.module.css";
-import LocalMattersimg from "../../../assets/AboutBanner/LocalMatters.png";
+// import LocalMattersimg from "/assets/AboutBanner/LocalMatters.png";
 
 function LocalMatters() {
   return (
@@ -34,7 +34,7 @@ function LocalMatters() {
         </div>
         <img
           className={classes.LocalMattersImg}
-          src={LocalMattersimg}
+          src='/assets/AboutBanner/LocalMatters.png'
           alt="LocalMatters Image"
         />
       </div>

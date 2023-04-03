@@ -1,8 +1,8 @@
 import React from "react";
-import facebook from '../../assets/socialMedia/facebook.png'
-import Instagram from '../../assets/socialMedia/instagram.png'
-import Linkdin from '../../assets/socialMedia/linkedin.png'
-import Twitter from '../../assets/socialMedia/twitter 1.png'
+// import facebook from '/assets/socialMedia/facebook.png'
+// import Instagram from '/assets/socialMedia/instagram.png'
+// import Linkdin from '/assets/socialMedia/linkedin.png'
+// import Twitter from '/assets/socialMedia/twitter 1.png'
 import classes from "./Footer.module.css";
 
 const Footer = () => {
@@ -19,10 +19,10 @@ const Footer = () => {
       <div className={classes.otherlinks}>
         <div className={classes.socialmedia}>
           <h4>Follow us</h4>
-          <span><img src={facebook} alt="facebook" /></span>
-          <span><img src={Instagram} alt="Instagram" /></span>
-          <span><img src={Twitter} alt="Twitter" /></span>
-          <span><img src={Linkdin} alt="Linkdin" /></span>
+          <span><img src="/assets/socialMedia/facebook.png" alt="facebook" /></span>
+          <span><img src='/assets/socialMedia/instagram.png' alt="Instagram" /></span>
+          <span><img src='/assets/socialMedia/twitter 1.png' alt="Twitter" /></span>
+          <span><img src='/assets/socialMedia/linkedin.png' alt="Linkdin" /></span>
         </div>
         <div className={classes.onlineShopping1}>
           <h4>Online Shopping</h4>

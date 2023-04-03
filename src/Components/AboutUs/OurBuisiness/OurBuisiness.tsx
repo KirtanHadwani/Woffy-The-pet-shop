@@ -1,6 +1,6 @@
 import React from "react";
 import classes from "./OurBuisiness.module.css";
-import OurBuisinessDog from "../../../assets/AboutBanner/OurBuisinessDog.png";
+// import OurBuisinessDog from "/assets/AboutBanner/OurBuisinessDog.png";
 
 const OurBuisiness = () => {
   return (
@@ -20,7 +20,7 @@ const OurBuisiness = () => {
           revenue.
         </p>
       </div>
-      <img src={OurBuisinessDog} alt="Dog Image" />
+      <img src='/assets/AboutBanner/OurBuisinessDog.png' alt="Dog Image" />
     </div>
   );
 };

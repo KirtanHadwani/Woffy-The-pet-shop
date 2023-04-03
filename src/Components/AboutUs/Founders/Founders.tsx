@@ -1,6 +1,6 @@
 import React from "react";
 import classes from "./Founders.module.css";
-import Foundersimg from "../../../assets/AboutBanner/Founders.png";
+// import Foundersimg from "/assets/AboutBanner/Founders.png";
 
 function Founders() {
   return (
@@ -37,7 +37,7 @@ function Founders() {
         </div>
         <img
           className={classes.foundersImg}
-          src={Foundersimg}
+          src='/assets/AboutBanner/Founders.png'
           alt="Founders Image"
         />
       </div>

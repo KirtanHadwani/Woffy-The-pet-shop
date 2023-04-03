@@ -19,28 +19,45 @@ function Register() {
   const [confirmpasswordErr, setConfirmPasswordErr] = useState<string>();
   const [error, setError] = useState<string>("");
 
-  const onSubmit = (event: any) => {
+  const onSubmit = async(event: any) => {
     event.preventDefault();
 
-    if (password !== confirmpassword) {
-      setConfirmPasswordErr("Password doent match");
-    }
-
-    if (
-      fnameErr == "" &&
-      emailErr == "" &&
-      lnameErr == "" &&
-      passwordErr == "" &&
-      confirmpasswordErr == ""
-    ) {
-      const myData = {
+    let response = await fetch("http://localhost:8000/register", {
+      credentials : "include",
+      method: "POST",
+      // headers: { "Content-Type": "application/json" },
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: JSON.stringify({
         firstName: fname,
         lastName: lname,
         email: email,
         password: password,
-      };
-      console.log(myData);
+        c_password: confirmpassword
+      }),
+    });
+
+    const res = await response.json();
+    console.log(res);
+
+    if (password !== confirmpassword) {
+      setConfirmPasswordErr("Password doesn't match");
     }
+
+    // if (
+    //   fnameErr == "" &&
+    //   emailErr == "" &&
+    //   lnameErr == "" &&
+    //   passwordErr == "" &&
+    //   confirmpasswordErr == ""
+    // ) {
+    //   const myData = {
+    //     firstName: fname,
+    //     lastName: lname,
+    //     email: email,
+    //     password: password,
+    //   };
+    //   console.log(myData);
+    // }
   };
 
   function fnameHandler(e: any) {

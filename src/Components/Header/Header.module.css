@@ -6,10 +6,16 @@
 }
 .container{
   position: fixed;
+  z-index: 2;
 }
 .logo img{
 
   margin-top: 15px;
+}
+.searchIcon{
+position: absolute;
+left: 15px;
+top: 13px;
 }
 .navUpper {
   background-color: #111111;
@@ -27,7 +33,7 @@
 }
 .search {
   width: 800px;
-  padding: 12px 595px 12px 76px;
+  padding: 12px 300px 12px 76px;
   border-radius: 33px;
   border: 1px solid black;  
   cursor: pointer;

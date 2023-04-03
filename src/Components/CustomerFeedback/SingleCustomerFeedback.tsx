@@ -1,6 +1,6 @@
 import React from "react";
 import classes from "./CustomerFeedback.module.css";
-import Rating1 from "../../assets/CustomerFeedback/Ratings.png"
+// import Rating1 from "/assets/CustomerFeedback/Ratings.png"
 
 
 type Props = {
@@ -12,7 +12,7 @@ type Props = {
 const SingleCustomerFeedback: React.FC<Props> = ({ description }) => {
   return (
     <div className={classes.CustomerCard}>
-      <img src={Rating1} alt="Ratings" />
+      <img src="/assets/CustomerFeedback/Ratings.png" alt="Ratings" />
     
      
       <div className={classes.description}>{description}</div>

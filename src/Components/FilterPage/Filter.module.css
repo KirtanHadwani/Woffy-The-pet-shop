@@ -1,0 +1,60 @@
+/* .filterContainer{
+    padding-top: 200px;
+   position: fixed;
+    width: 160px;
+    margin-left: 50px;
+} */
+.filterContainer {
+  position: absolute;
+  top: 250px;
+  left: 50px;
+  height: auto;
+  width: auto;
+}
+/*.mainContainer{
+    margin-left: 400px;
+    margin-top: -200px;
+    display: flex;
+    flex-direction: column;
+}
+.Container{
+    
+    display: flex;
+    flex-direction: row;
+} */
+.ProductsContainer {
+  display: flex;
+
+  position: absolute;
+  top: 250px;
+
+  flex-wrap: wrap;
+  width: 684px;
+  right: 0px;
+  margin-right: 200px;
+  /* flex-direction: column;  */
+}
+.cardImage {
+  
+  height: 12rem;
+  width: 8rem;
+  position: relative;
+}
+.cardImage> img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.card {
+  margin: 20px;
+  text-align: center;
+  /* position: relative; */
+  /* left: 230px; */
+  /* top: 260px; */
+}
+/* .ProductsData{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+} */
