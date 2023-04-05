@@ -11,18 +11,30 @@ import Offers from "./Offers/Offers";
 import Services from "./Offers/SingleOffer";
 import Slider from "./Slider";
 import { ToastContainer, toast } from "react-toastify";
+import { useLocation } from 'react-router-dom';
 
 function Home() {
-
-  // useEffect (()=>{
-  //   toast.success(():any=>{"Login Successful" {
-  //     position: toast.POSITION.TOP_RIGHT,
-  // }})
-  // },[])
+  const location = useLocation();
+  useEffect(() => {
+    const searchParams = new URLSearchParams(location.search);
+    const message = searchParams.get("message");
+    if(message == 'Login Successful' ){
+      toast.success("Login Successful")
+    }
+  }, [location]);
+  useEffect(() => {
+    const searchParams = new URLSearchParams(location.search);
+    const message = searchParams.get("message");
+    if(message == 'Logout Successful' ){
+      toast.success("Logout Successful")
+    }
+  }, [location]);
 
 
   return (
     <div>
+      <ToastContainer autoClose={2000}/>
+      
       <Header />
       <Slider />
       <Offers />

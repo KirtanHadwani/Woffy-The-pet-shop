@@ -76,3 +76,6 @@ top: 13px;
   color: #FF5555;
   border-bottom: 1px solid #FF5555;
 }
+.singleIcon a{
+  text-decoration: none;
+}

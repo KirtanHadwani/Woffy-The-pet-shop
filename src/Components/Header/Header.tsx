@@ -7,15 +7,36 @@ import { faPhoneVolume } from "@fortawesome/free-solid-svg-icons";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
 import { faCartShopping } from "@fortawesome/free-solid-svg-icons";
 // import Logo from '../../assets/Mask group.svg'
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+  Link,
+  Navigate,
+  useNavigate,
+} from "react-router-dom";
+import { useEffect, useState } from "react";
+import { ToastContainer, toast } from "react-toastify";
 
 const Header: React.FC = (props) => {
+  const [isLoggedIn, setIsLoggedIn] = useState(true);
+  const navigate = useNavigate();
+  const handleLogout = () => {
+    navigate("/?message=Logout Successful");
+    setIsLoggedIn(false);
+  };
+  const handleLogin = () => {
+    navigate("/Login");
+    setIsLoggedIn(true);
+  };
+
   return (
     <div className={classes.container}>
       <div className={classes.navUpper}>
         Get Flat 15% off on first purchase! Use Code: JOINTHETEAM
       </div>
       <div className={classes.navBottom}>
+        {/* <ToastContainer/> */}
         <div>
           <div className={classes.logo}>
             <img src="/assets/Mask group.svg" alt="logo" />
@@ -35,13 +56,25 @@ const Header: React.FC = (props) => {
               <FontAwesomeIcon icon={faPhoneVolume as IconProp} /> Support
             </span>
             <span className={classes.singleIcon}>
-              <FontAwesomeIcon icon={faUser as IconProp} />{" "}
-              <Link to="/Login">
-                <a href="">Login/Register</a>
-              </Link>
+              <FontAwesomeIcon icon={faCartShopping as IconProp} /> Cart
             </span>
             <span className={classes.singleIcon}>
-              <FontAwesomeIcon icon={faCartShopping as IconProp} /> Cart
+              {isLoggedIn ? (
+                <span onClick={handleLogout}>
+               <FontAwesomeIcon icon={faUser as IconProp} />
+               <Link to="/">
+                 <a href="">Logout</a>
+               </Link></span>
+              ) : (
+                <>
+                <span onClick={handleLogin}>
+                  <FontAwesomeIcon icon={faUser as IconProp} />
+                  <Link to="/Login">
+                    <a href="">Login</a>
+                  </Link>
+                  </span>
+                </>
+              )}
             </span>
           </div>
         </div>

@@ -1,0 +1,27 @@
+.errorMsg{
+    color: tomato;
+}
+.accPara{
+    color: black;
+}
+.mainContainer{
+    /* background-color: aqua; */
+    /* width: 40%;
+    margin-left: 100px; */
+}
+.formContainer{
+    /* width: 500px;
+    height: 700px;
+    padding-left: 0px; */
+}
+.registerImg{
+    /* width: 50px;
+    height: 50px;
+    width: 10%; */
+}
+.mainContainer{
+    /* display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center; */
+}
