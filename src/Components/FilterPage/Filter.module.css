@@ -5,7 +5,8 @@
     margin-left: 50px;
 } */
 .filterContainer {
-  position: absolute;
+  position: fixed;
+
   top: 250px;
   left: 50px;
   height: auto;
@@ -29,9 +30,9 @@
   top: 250px;
 
   flex-wrap: wrap;
-  width: 684px;
+  width: 900px;
   right: 0px;
-  margin-right: 200px;
+  margin-right: 112px;
   /* flex-direction: column;  */
 }
 .cardImage {
@@ -43,7 +44,7 @@
 .cardImage> img {
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 73%;
     transform: translate(-50%, -50%);
 }
 .card {
@@ -61,4 +62,25 @@
 .price{
   color: tomato;
   font-size: 20px;
+}
+.btn1{
+  background-color: tomato;
+  margin: 4px;
+  font-size: 15px;
+  height: 29px;
+width: 83px;
+border: none;
+border-radius: 5px;
+color: white;
+
+}
+.noProd{
+  position: absolute;
+left: 130px;
+top: 10px;
+}
+.noProd img{
+  height: 200px;
+width: 150px;
+margin-bottom: 58px;
 }

@@ -9,6 +9,7 @@ import Home from "./Components/Home";
 import Login from "./Components/LoginRegister/Login";
 import LoginRegister from "./Components/LoginRegister/LoginRegister";
 import Register from "./Components/LoginRegister/Register";
+import ProductDetail from "./Components/FilterPage/ProductDetail";
 
 // import Banner from "./Components/Banners/Banner";
 // import Blog from "./Components/Blog/Blog";
@@ -44,6 +45,7 @@ function App() {
           <Route path="/Login" element={<Login/>}/>
           <Route path="/Register" element={<Register/>}/>
           <Route path="/Filter" element={<Filter/>}/>
+          <Route path="/ProductDetail/:id" element={<ProductDetail/>}/>
         </Routes>
       </BrowserRouter>
     </>

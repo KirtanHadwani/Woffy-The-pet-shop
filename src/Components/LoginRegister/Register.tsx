@@ -65,7 +65,7 @@ function Register() {
       navigate("/Login?message=Register%20Success");
     } else {
       console.log("invalid credentials!");
-      toast.error(res.message, {
+      toast.error(res.result.error, {
         position: toast.POSITION.TOP_RIGHT,
       });
     }
@@ -130,8 +130,13 @@ function Register() {
   }
 
   return (
+    
     <div className="mainContainer1">
+       <ToastContainer autoClose={2000} />
       <div className=" mainContainer vh-70   d-flex justify-content-center align-items-center ">
+      <div className="registerImg">
+          <img src="/assets/register.jpg" alt="img" />
+        </div>
         <div className="formContainer col-md-6  p-5 shadow-lg border rounded-5  bg-white">
           <h2 className="text-center mb-10 text-primary">
             Welcome to Woffy The Pet Shop!
@@ -200,7 +205,7 @@ function Register() {
             <div className="d-grid">
               <button className="btn btn-primary">Register</button>
               {/* {error && <span>{error}</span>} */}
-              <ToastContainer autoClose={2000} />
+             
             </div>
           </form>
           <div className="mt-3">
@@ -215,9 +220,7 @@ function Register() {
             </p>
           </div>
         </div>
-        {/* <div className="registerImg">
-          <img src="/assets/register.jpg" alt="img" />
-        </div> */}
+       
       </div>
     </div>
   );

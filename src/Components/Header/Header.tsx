@@ -14,22 +14,36 @@ import {
   Link,
   Navigate,
   useNavigate,
+  useLocation,
 } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { ToastContainer, toast } from "react-toastify";
 
 const Header: React.FC = (props) => {
   const [isLoggedIn, setIsLoggedIn] = useState(true);
+  const location = useLocation();
   const navigate = useNavigate();
   const handleLogout = () => {
+    localStorage.clear()
     navigate("/?message=Logout Successful");
     setIsLoggedIn(false);
+    
   };
   const handleLogin = () => {
     navigate("/Login");
     setIsLoggedIn(true);
   };
+const logoHandler =()=>{
+  navigate("/")
+}
 
+useEffect(() => {
+  const searchParams = new URLSearchParams(location.search);
+  const message = searchParams.get("message");
+  if(message == 'Logout Successful' ){
+    toast.success("Logout Successful")
+  }
+}, [location]);
   return (
     <div className={classes.container}>
       <div className={classes.navUpper}>
@@ -37,8 +51,9 @@ const Header: React.FC = (props) => {
       </div>
       <div className={classes.navBottom}>
         {/* <ToastContainer/> */}
+        <ToastContainer autoClose={2000}/>
         <div>
-          <div className={classes.logo}>
+          <div className={classes.logo} onClick={logoHandler}>
             <img src="/assets/Mask group.svg" alt="logo" />
           </div>
           <div className={classes.inputField}>
