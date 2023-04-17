@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Woffy-The-pet-shop/static/css/main.c8b099a4.css",
+    "main.js": "/Woffy-The-pet-shop/static/js/main.c244f15d.js",
+    "static/js/787.0df66005.chunk.js": "/Woffy-The-pet-shop/static/js/787.0df66005.chunk.js",
+    "index.html": "/Woffy-The-pet-shop/index.html",
+    "main.c8b099a4.css.map": "/Woffy-The-pet-shop/static/css/main.c8b099a4.css.map",
+    "main.c244f15d.js.map": "/Woffy-The-pet-shop/static/js/main.c244f15d.js.map",
+    "787.0df66005.chunk.js.map": "/Woffy-The-pet-shop/static/js/787.0df66005.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c8b099a4.css",
+    "static/js/main.c244f15d.js"
+  ]
+}
